@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: users/get/user-get.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>karate</td>
+      <td>04 sep 2024, 17:02</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">users/get/user-get.feature</td>
+          <td      class="passed"    >6</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">6</td>
+
+          <td  class="passed"    >2</td>
+          <td >0</td>
+          <td class="total">2</td>
+
+          <td class="duration" data-value="1224118900">1.224</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">users/get/user-get.feature</span>
+
+
+</div>
+
+        <div class="description indention">Get product</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.604</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get a product</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://localhost:3000&quot; +&quot;/productos/&quot; + &quot;66d88738bf26ac1e37ecd659&quot;</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.587</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>17:02:18.142 request:
+1 &gt; GET http://localhost:3000/productos/66d88738bf26ac1e37ecd659
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_231)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+17:02:18.192 response time in milliseconds: 47
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 85
+1 &lt; ETag: W/&quot;55-yR4v4R3CuCl9ASauGZAPpMLkIlg&quot;
+1 &lt; Date: Wed, 04 Sep 2024 22:02:18 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;_id&quot;:&quot;66d88738bf26ac1e37ecd659&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.619</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get product</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://localhost:3000/productos/&quot;</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.610</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>17:02:18.141 request:
+1 &gt; GET http://localhost:3000/productos/
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_231)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+17:02:18.206 response time in milliseconds: 61
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 16754
+1 &lt; ETag: W/&quot;4172-D7OqubaSae+ycvrdjf3z3eyA7Wo&quot;
+1 &lt; Date: Wed, 04 Sep 2024 22:02:18 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+[{&quot;_id&quot;:&quot;66d88727e66d2e4d6c8ba415&quot;,&quot;nombre&quot;:&quot;Carlos Actualizado&quot;,&quot;precio&quot;:30,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88738bf26ac1e37ecd659&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88753790b214ad5c76bd3&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d887b33501170478e56d18&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d887d4d888499ec9d74605&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8888d2a12b06e8e476697&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8890300cad0bf51f30d02&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8891d85e69fe5d6739d16&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88a0cca28491fcaaf7fb8&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88a0cca28491fcaaf7fbc&quot;,&quot;nombre&quot;:&quot;Carlos para eliminar&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88a9b230229733180eb74&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88b4f8d822bdac677b9eb&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88b751a8bd69e7b84a8fb&quot;,&quot;nombre&quot;:&quot;Carlos Actualizado&quot;,&quot;precio&quot;:30,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88b751a8bd69e7b84a8fd&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88bc766c9a305127f3572&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88bd6239d523a58684943&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88bf53f9924adffbf9ca8&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88c1ddba547b284764354&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88c629d08f2bead6a8a2e&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88c8852642965f0ecb002&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88cc484cff856c094437f&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88d459be1269ae64a5bcf&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88d459be1269ae64a5bd3&quot;,&quot;nombre&quot;:&quot;Carlos para eliminar&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88d6791e0139655e67171&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88d6791e0139655e67175&quot;,&quot;nombre&quot;:&quot;Carlos para eliminar&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88d98bd187b21085c3cf6&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88d98bd187b21085c3cfa&quot;,&quot;nombre&quot;:&quot;Carlos para eliminar&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d88daaa7ad30611b2b7012&quot;,&quot;nombre&quot;:&quot;Carlos&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d890333f660b84a21da1d2&quot;,&quot;nombre&quot;:&quot;Producto Prueba&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d890333f660b84a21da1d4&quot;,&quot;nombre&quot;:&quot;Producto de Prueba&quot;,&quot;precio&quot;:10,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d891e513d003a68ee983a8&quot;,&quot;nombre&quot;:&quot;Producto Prueba&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d891e513d003a68ee983aa&quot;,&quot;nombre&quot;:&quot;Producto de Prueba&quot;,&quot;precio&quot;:10,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d891e513d003a68ee983ad&quot;,&quot;nombre&quot;:&quot;Producto Actualizado&quot;,&quot;precio&quot;:30,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d89260743f865598e3a9b9&quot;,&quot;nombre&quot;:&quot;Producto Prueba&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d89260743f865598e3a9bb&quot;,&quot;nombre&quot;:&quot;Producto de Prueba&quot;,&quot;precio&quot;:10,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d89260743f865598e3a9be&quot;,&quot;nombre&quot;:&quot;Producto actualizado&quot;,&quot;precio&quot;:30,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d892c4cd76fbfbfff9d1d9&quot;,&quot;nombre&quot;:&quot;Producto Prueba&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d892c4cd76fbfbfff9d1db&quot;,&quot;nombre&quot;:&quot;Producto de Prueba&quot;,&quot;precio&quot;:10,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d892c4cd76fbfbfff9d1de&quot;,&quot;nombre&quot;:&quot;Producto actualizado&quot;,&quot;precio&quot;:30,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d89310dabf50a989c098cf&quot;,&quot;nombre&quot;:&quot;Producto Prueba&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d89310dabf50a989c098d1&quot;,&quot;nombre&quot;:&quot;Producto de Prueba&quot;,&quot;precio&quot;:10,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d89310dabf50a989c098d4&quot;,&quot;nombre&quot;:&quot;Producto actualizado&quot;,&quot;precio&quot;:30,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893204bfdd837c5875afc&quot;,&quot;nombre&quot;:&quot;Producto Prueba&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893204bfdd837c5875afe&quot;,&quot;nombre&quot;:&quot;Producto de Prueba&quot;,&quot;precio&quot;:10,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893204bfdd837c5875b01&quot;,&quot;nombre&quot;:&quot;Producto actualizado&quot;,&quot;precio&quot;:30,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8933128911fd03be477da&quot;,&quot;nombre&quot;:&quot;Producto Prueba&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8933128911fd03be477dc&quot;,&quot;nombre&quot;:&quot;Producto de Prueba&quot;,&quot;precio&quot;:10,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8933128911fd03be477df&quot;,&quot;nombre&quot;:&quot;Producto actualizado&quot;,&quot;precio&quot;:30,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893416169bef01f40c578&quot;,&quot;nombre&quot;:&quot;Producto Prueba&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893416169bef01f40c57a&quot;,&quot;nombre&quot;:&quot;Producto de Prueba&quot;,&quot;precio&quot;:10,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893416169bef01f40c57d&quot;,&quot;nombre&quot;:&quot;Producto actualizado&quot;,&quot;precio&quot;:30,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893759b71cd3aca443945&quot;,&quot;nombre&quot;:&quot;Producto Prueba&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893759b71cd3aca443947&quot;,&quot;nombre&quot;:&quot;Producto de Prueba&quot;,&quot;precio&quot;:10,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893759b71cd3aca44394a&quot;,&quot;nombre&quot;:&quot;Producto actualizado&quot;,&quot;precio&quot;:30,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893bcb42e554cd4650fbf&quot;,&quot;nombre&quot;:&quot;Producto Prueba&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893bcb42e554cd4650fc1&quot;,&quot;nombre&quot;:&quot;Producto de Prueba&quot;,&quot;precio&quot;:10,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893bcb42e554cd4650fc4&quot;,&quot;nombre&quot;:&quot;Producto actualizado&quot;,&quot;precio&quot;:30,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893cb27be4370ea8fc896&quot;,&quot;nombre&quot;:&quot;Producto Prueba&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893cb27be4370ea8fc898&quot;,&quot;nombre&quot;:&quot;Producto de Prueba&quot;,&quot;precio&quot;:10,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893cb27be4370ea8fc89b&quot;,&quot;nombre&quot;:&quot;Producto actualizado&quot;,&quot;precio&quot;:30,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893f3b4bc47c67e49edff&quot;,&quot;nombre&quot;:&quot;Producto Prueba&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893f3b4bc47c67e49ee01&quot;,&quot;nombre&quot;:&quot;Producto de Prueba&quot;,&quot;precio&quot;:10,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d893f3b4bc47c67e49ee04&quot;,&quot;nombre&quot;:&quot;Producto actualizado&quot;,&quot;precio&quot;:30,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d894287f46ddb4ed3add0c&quot;,&quot;nombre&quot;:&quot;Producto Prueba&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d894287f46ddb4ed3add0e&quot;,&quot;nombre&quot;:&quot;Producto de Prueba&quot;,&quot;precio&quot;:10,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d894287f46ddb4ed3add11&quot;,&quot;nombre&quot;:&quot;Producto actualizado&quot;,&quot;precio&quot;:30,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d894750d88a64def25bf98&quot;,&quot;nombre&quot;:&quot;Producto Prueba&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d894750d88a64def25bf9a&quot;,&quot;nombre&quot;:&quot;Producto de Prueba&quot;,&quot;precio&quot;:10,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d894750d88a64def25bf9d&quot;,&quot;nombre&quot;:&quot;Producto actualizado&quot;,&quot;precio&quot;:30,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d89a713745f7479ff753cd&quot;},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753d1&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 1&quot;,&quot;precio&quot;:10,&quot;cantidad&quot;:5},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753d2&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 2&quot;,&quot;precio&quot;:20,&quot;cantidad&quot;:10},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753d3&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 3&quot;,&quot;precio&quot;:30,&quot;cantidad&quot;:15},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753d4&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 4&quot;,&quot;precio&quot;:40,&quot;cantidad&quot;:20},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753d5&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 5&quot;,&quot;precio&quot;:50,&quot;cantidad&quot;:25},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753d6&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 6&quot;,&quot;precio&quot;:60,&quot;cantidad&quot;:30},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753d7&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 7&quot;,&quot;precio&quot;:70,&quot;cantidad&quot;:35},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753d8&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 8&quot;,&quot;precio&quot;:80,&quot;cantidad&quot;:40},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753d9&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 9&quot;,&quot;precio&quot;:90,&quot;cantidad&quot;:45},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753da&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 10&quot;,&quot;precio&quot;:100,&quot;cantidad&quot;:50},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753db&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 11&quot;,&quot;precio&quot;:110,&quot;cantidad&quot;:55},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753dc&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 12&quot;,&quot;precio&quot;:120,&quot;cantidad&quot;:60},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753dd&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 13&quot;,&quot;precio&quot;:130,&quot;cantidad&quot;:65},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753de&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 14&quot;,&quot;precio&quot;:140,&quot;cantidad&quot;:70},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753df&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 15&quot;,&quot;precio&quot;:150,&quot;cantidad&quot;:75},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753e0&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 16&quot;,&quot;precio&quot;:160,&quot;cantidad&quot;:80},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753e1&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 17&quot;,&quot;precio&quot;:170,&quot;cantidad&quot;:85},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753e2&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 18&quot;,&quot;precio&quot;:180,&quot;cantidad&quot;:90},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753e3&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 19&quot;,&quot;precio&quot;:190,&quot;cantidad&quot;:95},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753e4&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 20&quot;,&quot;precio&quot;:200,&quot;cantidad&quot;:100},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753e5&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 21&quot;,&quot;precio&quot;:210,&quot;cantidad&quot;:105},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753e6&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 22&quot;,&quot;precio&quot;:220,&quot;cantidad&quot;:110},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753e7&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 23&quot;,&quot;precio&quot;:230,&quot;cantidad&quot;:115},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753e8&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 24&quot;,&quot;precio&quot;:240,&quot;cantidad&quot;:120},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753e9&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 25&quot;,&quot;precio&quot;:250,&quot;cantidad&quot;:125},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753ea&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 26&quot;,&quot;precio&quot;:260,&quot;cantidad&quot;:130},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753eb&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 27&quot;,&quot;precio&quot;:270,&quot;cantidad&quot;:135},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753ec&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 28&quot;,&quot;precio&quot;:280,&quot;cantidad&quot;:140},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753ed&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 29&quot;,&quot;precio&quot;:290,&quot;cantidad&quot;:145},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753ee&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 30&quot;,&quot;precio&quot;:300,&quot;cantidad&quot;:150},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753ef&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 31&quot;,&quot;precio&quot;:310,&quot;cantidad&quot;:155},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753f0&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 32&quot;,&quot;precio&quot;:320,&quot;cantidad&quot;:160},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753f1&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 33&quot;,&quot;precio&quot;:330,&quot;cantidad&quot;:165},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753f2&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 34&quot;,&quot;precio&quot;:340,&quot;cantidad&quot;:170},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753f3&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 35&quot;,&quot;precio&quot;:350,&quot;cantidad&quot;:175},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753f4&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 36&quot;,&quot;precio&quot;:360,&quot;cantidad&quot;:180},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753f5&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 37&quot;,&quot;precio&quot;:370,&quot;cantidad&quot;:185},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753f6&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 38&quot;,&quot;precio&quot;:380,&quot;cantidad&quot;:190},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753f7&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 39&quot;,&quot;precio&quot;:390,&quot;cantidad&quot;:195},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753f8&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 40&quot;,&quot;precio&quot;:400,&quot;cantidad&quot;:200},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753f9&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 41&quot;,&quot;precio&quot;:410,&quot;cantidad&quot;:205},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753fa&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 42&quot;,&quot;precio&quot;:420,&quot;cantidad&quot;:210},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753fb&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 43&quot;,&quot;precio&quot;:430,&quot;cantidad&quot;:215},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753fc&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 44&quot;,&quot;precio&quot;:440,&quot;cantidad&quot;:220},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753fd&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 45&quot;,&quot;precio&quot;:450,&quot;cantidad&quot;:225},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753fe&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 46&quot;,&quot;precio&quot;:460,&quot;cantidad&quot;:230},{&quot;_id&quot;:&quot;66d89afc3745f7479ff753ff&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 47&quot;,&quot;precio&quot;:470,&quot;cantidad&quot;:235},{&quot;_id&quot;:&quot;66d89afc3745f7479ff75400&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 48&quot;,&quot;precio&quot;:480,&quot;cantidad&quot;:240},{&quot;_id&quot;:&quot;66d89afc3745f7479ff75401&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 49&quot;,&quot;precio&quot;:490,&quot;cantidad&quot;:245},{&quot;_id&quot;:&quot;66d89afc3745f7479ff75402&quot;,&quot;nombre&quot;:&quot;Producto de Prueba 50&quot;,&quot;precio&quot;:500,&quot;cantidad&quot;:250},{&quot;_id&quot;:&quot;66d8a31a0d88a64def25bfaf&quot;,&quot;nombre&quot;:&quot;platano&quot;,&quot;precio&quot;:12,&quot;cantidad&quot;:8,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8a5d00d88a64def25bfb1&quot;,&quot;nombre&quot;:&quot;platano&quot;,&quot;precio&quot;:12,&quot;cantidad&quot;:8,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8a6d60d88a64def25bfb3&quot;,&quot;nombre&quot;:&quot;platano&quot;,&quot;precio&quot;:12,&quot;cantidad&quot;:8,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8a79c0d88a64def25bfb5&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8a8be0d88a64def25bfb7&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8a8d10d88a64def25bfb9&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8a9a70d88a64def25bfbc&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8a9a70d88a64def25bfc0&quot;,&quot;nombre&quot;:&quot;ajo&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8aa040d88a64def25bfc2&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8aa4c0d88a64def25bfc4&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8aad70d88a64def25bfc6&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8ac020d88a64def25bfd5&quot;,&quot;nombre&quot;:&quot;tomate actualizado&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8ac480d88a64def25bfdd&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8ac480d88a64def25bfdf&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8ac480d88a64def25bfe1&quot;,&quot;nombre&quot;:&quot;cebolla&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8ac480d88a64def25bfe3&quot;,&quot;nombre&quot;:&quot;ajo&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8ac480d88a64def25bfe5&quot;,&quot;nombre&quot;:&quot;tomate actualizado&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8ac720d88a64def25bfe9&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8ac720d88a64def25bfeb&quot;,&quot;nombre&quot;:&quot;cebolla&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8ae430d88a64def25bff4&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8ae430d88a64def25bff7&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8ae430d88a64def25bff9&quot;,&quot;nombre&quot;:&quot;cebolla&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8ae430d88a64def25bffb&quot;,&quot;nombre&quot;:&quot;ajo&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8ae430d88a64def25bffd&quot;,&quot;nombre&quot;:&quot;tomate actualizado&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8af020d88a64def25c006&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8af020d88a64def25c008&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8af020d88a64def25c00d&quot;,&quot;nombre&quot;:&quot;ajo&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8af020d88a64def25c00f&quot;,&quot;nombre&quot;:&quot;tomate actualizado&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8af6b0d88a64def25c019&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8af6b0d88a64def25c01b&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8af6b0d88a64def25c01e&quot;,&quot;nombre&quot;:&quot;ajo&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8af6b0d88a64def25c020&quot;,&quot;nombre&quot;:&quot;cebolla&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8af6b0d88a64def25c022&quot;,&quot;nombre&quot;:&quot;tomate actualizado&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8afbd0d88a64def25c02a&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8afbd0d88a64def25c02d&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8afbd0d88a64def25c02f&quot;,&quot;nombre&quot;:&quot;ajo&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8afbd0d88a64def25c031&quot;,&quot;nombre&quot;:&quot;cebolla&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8afbd0d88a64def25c033&quot;,&quot;nombre&quot;:&quot;tomate actualizado&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8b0fe0d88a64def25c03e&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8b0ff0d88a64def25c041&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8b0ff0d88a64def25c043&quot;,&quot;nombre&quot;:&quot;cebolla&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8b0ff0d88a64def25c045&quot;,&quot;nombre&quot;:&quot;ajo&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8b0ff0d88a64def25c047&quot;,&quot;nombre&quot;:&quot;tomate actualizado&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8b19e0d88a64def25c04f&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8b19e0d88a64def25c053&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8b19e0d88a64def25c055&quot;,&quot;nombre&quot;:&quot;ajo&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8b19e0d88a64def25c057&quot;,&quot;nombre&quot;:&quot;cebolla&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8b19e0d88a64def25c05a&quot;,&quot;nombre&quot;:&quot;tomate actualizado&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8b39f586fd6b80dec2672&quot;,&quot;nombre&quot;:&quot;Producto de Prueba&quot;,&quot;precio&quot;:10,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8b39f586fd6b80dec2670&quot;,&quot;nombre&quot;:&quot;Producto Prueba&quot;,&quot;precio&quot;:24,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8b39f586fd6b80dec2675&quot;,&quot;nombre&quot;:&quot;Producto actualizado&quot;,&quot;precio&quot;:30,&quot;cantidad&quot;:5,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8c568586fd6b80dec267d&quot;,&quot;nombre&quot;:&quot;Producto de Prueba &quot;,&quot;precio&quot;:100,&quot;cantidad&quot;:10,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8c59b586fd6b80dec267f&quot;,&quot;nombre&quot;:&quot;Producto de Prueba&quot;,&quot;precio&quot;:100,&quot;cantidad&quot;:10,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8c6a5586fd6b80dec2681&quot;,&quot;nombre&quot;:&quot;Producto de Prueba&quot;,&quot;precio&quot;:100,&quot;cantidad&quot;:10,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8d87b586fd6b80dec269c&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8d87c586fd6b80dec26a2&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8d87c586fd6b80dec26a4&quot;,&quot;nombre&quot;:&quot;cebolla&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8d87c586fd6b80dec26a6&quot;,&quot;nombre&quot;:&quot;ajo&quot;,&quot;precio&quot;:22,&quot;cantidad&quot;:2,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8d87c586fd6b80dec26a8&quot;,&quot;nombre&quot;:&quot;tomate actualizado&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8d8ea586fd6b80dec26ae&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66d8d8ea586fd6b80dec26b0&quot;,&quot;nombre&quot;:&quot;tomate&quot;,&quot;precio&quot;:1233,&quot;cantidad&quot;:3,&quot;__v&quot;:0}]
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
